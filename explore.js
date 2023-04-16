@@ -7,7 +7,7 @@ const client = require('twilio')(accountSid, authToken);
 
 // client.messages.list({limit: 20})
 //                .then(messages => messages.forEach(m => console.log(m.sid)));
-// console.log('gathering log')
+
 
 async function delteAllMessages(){
     const messages = await client.messages.list()
